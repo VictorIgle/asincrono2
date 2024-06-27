@@ -1,0 +1,46 @@
+.Caracteristicas-wrapper{
+    width: 100%;
+    padding: 3rem;
+    background-color: rgb(230, 225, 225);
+}
+.Caracteristicas-grid{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin: auto;
+    gap: 2rem;
+}
+.Caracteristicas-container.azul{
+    background-color: rgb(4, 101, 247);
+}
+.Caracteristicas-container.amarillo{
+    background-color: rgb(236, 186, 22);
+}
+.Caracteristicas-container.rojo{
+    background-color: rgb(206, 16, 79);
+}
+.Caracteristicas-container.negro{
+    background-color: rgb(65, 63, 63);
+}
+.Caracteristicas-container.morado{
+    background-color: rgb(128, 25, 224);
+}
+.Caracteristicas-container.blanco{
+    background-color: white;
+}
+.Caracteristicas-container{
+    border-radius: 15px;
+    padding: 3rem;
+}
+.Caracteristicas-img{
+    width: 3rem;
+    margin: 0 0 2rem 0;
+}
+.Caracteristicas-span{
+    font-size: 2em;
+    color: white;
+    line-height: 2.5rem;
+}
+.Caracteristicas-span.blanco{
+    color: black;
+}

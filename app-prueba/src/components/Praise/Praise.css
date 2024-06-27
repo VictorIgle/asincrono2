@@ -1,0 +1,33 @@
+.Praise-wrapper{
+    width: 65%;
+    margin: 5rem auto;
+}
+.Praise-h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 3rem ;
+
+}
+.Praise-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    gap: 2rem;
+}
+.Praise-container{
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+    padding: 4rem;
+    position: relative;
+}
+.Praise-p{
+    font-size: 1.5em;
+    line-height: 2rem;
+}
+.Praise-img{
+    width: 40%;
+    margin: 2rem 0 0;
+    position: absolute;
+    bottom: 1rem;
+    left: 1;
+}

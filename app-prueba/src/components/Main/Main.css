@@ -1,0 +1,123 @@
+.Section-container.undefined{
+    display: none;
+}
+.Section-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.Section-container.triage{
+    background-color: rgb(4, 101, 247);
+    padding: 10rem 10rem 0 0  ;
+}
+
+.Section-container.drag-left{
+    background-color: rgb(206, 16, 79);
+    flex-direction: row-reverse;
+    padding: 0 0 10rem 10rem;
+}
+
+.Section-container.drag-right{
+    background-color: black;
+    padding: 0 10rem 10rem 0;
+}
+
+.Section-container.tap{
+    background-color: rgb(236, 186, 22);
+    color: black; 
+    padding: 10rem 0 0 10rem;
+}
+.Section-container.reply{
+    background-color: rgb(128, 25, 224);
+    padding: 10rem 10rem 0 0;
+}
+
+.Section-container.tap{
+    flex-direction: row-reverse;
+}
+
+.Section-wrapper{
+    width:100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    color: white;
+    margin: 0 0 15rem 15rem; 
+}
+
+.Section-wrapper.triage{
+    width: 90%;
+    margin: 0 0 0 15rem;
+}
+
+.Section-icon{
+    width: 4rem;
+    margin: 0 0 2rem;
+}
+
+.Section-icon.triage{
+    width: 6rem;
+}
+
+.Section-apple.triage{
+    width: 15rem;
+    margin: 2rem 0 5rem;
+    display: block;
+}
+
+.Section-apple{
+    display: none;
+}
+
+
+.Section-icon.drag-right{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.Section-title{
+    font-size: 3em;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+.Section-title.triage{
+    width: 40%;
+    margin: 0 0 2rem;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.Section-p{
+    width: 35%;
+    text-align: start;
+    font-size: 2em;
+    line-height: 2.5rem;
+    color: rgb(221, 212, 212);
+}
+
+.Section-title.tap{
+    color: black;
+}
+
+.Section-p.tap{
+    color: black;
+}
+
+.Section-image{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+}
+
+.Section-img{
+    width: 100%;
+    object-fit: contain;
+   
+}

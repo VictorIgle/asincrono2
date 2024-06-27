@@ -1,0 +1,11 @@
+.Footer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.Footer-span{
+    font-size: 1.5em;
+}
