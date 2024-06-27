@@ -38,12 +38,27 @@ export const Praise = () =>{
                 {bloque.length === 0 && <span>No hay datos</span>}
                 {bloque.length !== 0 && bloque.map( bloque =>
 
-                <Contenido key={bloque._id} {...bloque} />
+                <BaseDD key={bloque._id} {...bloque} />
 
             )}
             </div>
         </div>
         
+    )
+}
+
+const BaseDD = (props) => {
+
+    const {bbdd} = props
+
+
+    return(
+
+        <>
+        {bbdd && bbdd.map( eachBbdd=> 
+            <Contenido key={eachBbdd._id} {...eachBbdd} />
+        )}
+        </>
     )
 }
 
@@ -55,7 +70,7 @@ const Contenido = (props) => {
         <>
         {praise && praise.map( eachPraise => 
 
-            <Informacion key={eachPraise.id} {...eachPraise} />
+            <Informacion key={eachPraise._id} {...eachPraise} />
         )}
         
         </>

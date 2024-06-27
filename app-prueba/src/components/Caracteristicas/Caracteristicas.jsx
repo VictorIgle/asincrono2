@@ -39,7 +39,7 @@ export const Caracteristicas = ()=>{
             {funciones.length === 0 && <span>No hay datos</span>}
             {funciones.length !== 0 && funciones.map( funcion =>
 
-                <Detalles key={funcion._id} {...funcion} />
+                <BaseDD key={funcion._id} {...funcion} />
                 
             )}
             
@@ -52,6 +52,21 @@ export const Caracteristicas = ()=>{
     )
 }
 
+const BaseDD = (props) => {
+
+    const {bbdd} = props
+
+
+    return(
+
+        <>
+        {bbdd && bbdd.map( eachBbdd=> 
+            <Detalles key={eachBbdd._id} {...eachBbdd} />
+        )}
+        </>
+    )
+}
+
 
 const Detalles = (props) => {
 
@@ -61,7 +76,7 @@ const Detalles = (props) => {
         <>
             {caracteristicas && caracteristicas.map(eachCaracteristica =>
 
-                <Informacion key={eachCaracteristica.id} {...eachCaracteristica} />
+                <Informacion key={eachCaracteristica._id} {...eachCaracteristica} />
             )}
                 
         </>

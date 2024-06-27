@@ -33,9 +33,24 @@ export const FooterIconos = () => {
         <div className="Footer-images">
             {iconos.length === 0 && <span>No hay datos</span>}
             {iconos.length != 0 && iconos.map( icono => 
-                <Icono key={ icono._id} {...icono} />
+                <BaseDD key={ icono._id} {...icono} />
             )}
         </div>
+    )
+}
+
+const BaseDD = (props) => {
+
+    const {bbdd} = props
+
+
+    return(
+
+        <>
+        {bbdd && bbdd.map( eachBbdd=> 
+            <Icono key={eachBbdd._id} {...eachBbdd} />
+        )}
+        </>
     )
 }
 
@@ -46,7 +61,7 @@ const Icono = (props) => {
     return(
         <>
             {footer_icono && footer_icono.map( eachIcono =>
-            <Imagen key={ eachIcono.id} {...eachIcono} />
+            <Imagen key={ eachIcono._id} {...eachIcono} />
             )}
         </>
     )

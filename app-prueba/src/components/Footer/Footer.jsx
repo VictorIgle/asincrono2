@@ -33,9 +33,24 @@ export const Footer = () => {
         <div className="Footer">
             {foot.length === 0 && <span>No hay datos</span>}
             {foot.length != 0 && foot.map(eachFoot =>
-                <Contenidos key={ eachFoot._id} {...eachFoot} />
+                <BaseDD key={ eachFoot._id} {...eachFoot} />
             )}
         </div>
+    )
+}
+
+const BaseDD = (props) => {
+
+    const {bbdd} = props
+
+
+    return(
+
+        <>
+        {bbdd && bbdd.map( eachBbdd=> 
+            <Contenidos key={eachBbdd._id} {...eachBbdd} />
+        )}
+        </>
     )
 }
 
@@ -46,7 +61,7 @@ const Contenidos = (props) => {
     return(
         <>
             {footer && footer.map(eachFooter =>
-                <Datosfooter key={eachFooter.id} {...eachFooter} />
+                <Datosfooter key={eachFooter._id} {...eachFooter} />
              )}
         </>
     )
