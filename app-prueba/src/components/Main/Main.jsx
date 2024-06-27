@@ -40,7 +40,7 @@ useEffect(()=>{
             {bloques.length == 0 && <p>No hay informacion</p>}
             {bloques.length !== 0 && bloques.map( bloque =>
 
-                <Informacion key={bloque.id} {...bloque} />
+                <Informacion key={bloque._id} {...bloque} />
 
              )}
            

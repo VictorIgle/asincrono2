@@ -38,7 +38,7 @@ export const Praise = () =>{
                 {bloque.length === 0 && <span>No hay datos</span>}
                 {bloque.length !== 0 && bloque.map( bloque =>
 
-                <Contenido key={bloque.id} {...bloque} />
+                <Contenido key={bloque._id} {...bloque} />
 
             )}
             </div>

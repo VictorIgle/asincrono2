@@ -39,7 +39,7 @@ export const Caracteristicas = ()=>{
             {funciones.length === 0 && <span>No hay datos</span>}
             {funciones.length !== 0 && funciones.map( funcion =>
 
-                <Detalles key={funcion.id} {...funcion} />
+                <Detalles key={funcion._id} {...funcion} />
                 
             )}
             

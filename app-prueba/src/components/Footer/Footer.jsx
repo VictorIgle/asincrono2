@@ -33,7 +33,7 @@ export const Footer = () => {
         <div className="Footer">
             {foot.length === 0 && <span>No hay datos</span>}
             {foot.length != 0 && foot.map(eachFoot =>
-                <Contenidos key={ eachFoot.id} {...eachFoot} />
+                <Contenidos key={ eachFoot._id} {...eachFoot} />
             )}
         </div>
     )

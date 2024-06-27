@@ -33,7 +33,7 @@ export const FooterIconos = () => {
         <div className="Footer-images">
             {iconos.length === 0 && <span>No hay datos</span>}
             {iconos.length != 0 && iconos.map( icono => 
-                <Icono key={ icono.id} {...icono} />
+                <Icono key={ icono._id} {...icono} />
             )}
         </div>
     )
