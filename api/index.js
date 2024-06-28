@@ -5,9 +5,11 @@ const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const {router} = require('./router')
-const PORT = process.env.PORT || 3000
 
-const conectar = async () => mongoose.connect('mongodb://127.0.0.1:27017/Triage')
+const PORT = process.env.PORT || 3000
+const BBDD = process.env.BBDD || 'mongodb://127.0.0.1:27017/Triage'
+
+const conectar = async () => mongoose.connect(BBDD)
                     .then( () => console.log('Conectado a MongoDB'))
                     .catch( err => console.log(err.message))
 
@@ -22,5 +24,5 @@ const app = express()
     
 
 
-    app.listen(PORT , ()=> console.log('Iniciando API'))
+    app.listen( PORT , ()=> console.log('Iniciando API'))
     
